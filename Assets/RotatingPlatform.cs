@@ -6,6 +6,6 @@ public class RotatingPlatform : MonoBehaviour
 {
     public Vector3 axis;
     void Update(){
-        transform.Rotate(axis);
+        transform.Rotate(axis/30);
     }
 }
