@@ -10,11 +10,19 @@ public class SphereMobileMovement : MonoBehaviour
 
     public int speed=1;
 
+    public static bool movable=true;
+
     void Start(){
         rigidbody=gameObject.GetComponent<Rigidbody>();
+        //movable=true;
     }
 
     void FixedUpdate(){
+        // if (!movable) {
+        //     rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        //     return;
+        // }
+
         // if(joystick.Vertical!=0 && joystick.Horizontal!=0){
 
         //     float heading = Mathf.Atan2(joystick.Horizontal,joystick.Vertical);
